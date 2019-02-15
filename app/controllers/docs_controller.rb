@@ -6,10 +6,9 @@ class DocsController < ApplicationController
     end
 
     def show
-
     end
 
-    def new
+    def new # only responsible for view
         @doc = Doc.new
     end
 
@@ -23,13 +22,19 @@ class DocsController < ApplicationController
         end
     end
     
-    def edit
+    def edit # the document is edited in the view file
     end
     
     def update
+        if @doc.update(doc_params) # if doc is updated, save changes and go back to doc
+            redirect_to @doc
+        else
+            render 'edit'
+        end
     end
 
     def destroy
+        @doc.destroy
     end
     
     private

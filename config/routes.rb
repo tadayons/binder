@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  resources :docs
+  resources :docs # https://guides.rubyonrails.org/routing.html#resource-routing-the-rails-default
 end
