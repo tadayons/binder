@@ -27,16 +27,7 @@ body {
 .wrapper_with_padding {
 	width: 80%;
 	margin: 0 auto;
-	padding: 3.5rem 0;
-}
-
-.clearfix:before, .clearfix:after {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
+	padding: 2rem 0;
 }
 
 .notice {
