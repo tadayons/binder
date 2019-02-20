@@ -1,7 +1,7 @@
-$dark_gray: rgb(155, 161, 161);
-$light_gray: #C0C1C1;
-$blue: rgb(51, 123, 205);
-$tint: #aca8a6be;
+$dark_gray: #5D5C61;
+$light_gray: rgb(184, 182, 190);
+$blue: #557A95;
+$tint: #7395AE;
 
 @mixin bold_font {
 	font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
@@ -55,6 +55,7 @@ button, .button {
 	a {
 		color: white;
 		text-decoration: none;
+		font-size: 1.5rem;
 	}
 }
 
