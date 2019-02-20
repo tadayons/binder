@@ -2,7 +2,7 @@
     <div id="doc_show">
         <h1><%= @doc.title %></h1>
         <p><%= simple_format(@doc.content) %></p>
-        <button class="smallbtn"><%=link_to "EDIT", edit_doc_path(@doc) %></button>
-        <button class="smallbtn"><%=link_to "DELETE", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" } %></button>
+        <button class="button"><%=link_to "EDIT", edit_doc_path(@doc) %></button>
+        <button class="button"><%=link_to "DELETE", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" } %></button>
     </div>
 </div>
