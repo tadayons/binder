@@ -1,6 +1,8 @@
-<h1> <%= @doc.title %> </h1>
-<p> <%= @doc.content %> </p>
-
-<%= link_to "All Docs", docs_path%>
-<%= link_to "Fix Doc", edit_doc_path(@doc)%>
-<%= link_to "Trash", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?"} %> 
+<div class="wrapper_with_padding">
+    <div id="doc_show">
+        <h1><%= @doc.title %></h1>
+        <p><%= simple_format(@doc.content) %></p>
+        <button class="smallbtn"><%=link_to "EDIT", edit_doc_path(@doc) %></button>
+        <button class="smallbtn"><%=link_to "DELETE", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" } %></button>
+    </div>
+</div>
