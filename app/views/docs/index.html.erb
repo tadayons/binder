@@ -4,8 +4,8 @@
             <a href=<%= url_for(doc) %>>
                 <div class="doc">
                     <p class="title"><%= doc.title %></p>
-                    <p class="date"><%= time_ago_in_words(doc.created_at) %></p>
-                    <p class="content"><%= truncate(doc.content, length:35) %></p>
+                    <p class="date">Created <%= time_ago_in_words(doc.created_at) %> ago</p>
+                    <p class="content"><%= truncate(doc.content, length:50) %></p>
                 </div>
             </a>
         <% end %>
