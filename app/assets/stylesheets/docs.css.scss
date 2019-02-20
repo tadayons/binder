@@ -37,11 +37,12 @@
 
 .smallbtn {
     text-align: center;
-    color: $blue;
-    font-size: 1rem;
+    color: white;
+    font-size: 1.25rem;
     width: 8rem;
     height: 3rem;
     padding: 0rem;
+    background-color: $blue;
 }
 
 #doc_show {
