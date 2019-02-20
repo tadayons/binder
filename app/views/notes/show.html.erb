@@ -1,0 +1,8 @@
+<div class="wrapper_with_padding">
+    <div id="note_show">
+        <h1><%= @note.title %></h1>
+        <p><%= simple_format(@note.content) %></p>
+        <button class="button"><%=link_to "EDIT", edit_note_path(@note) %></button>
+        <button class="button"><%=link_to "DELETE", note_path(@note), method: :delete, data: { confirm: "Are you sure?" } %></button>
+    </div>
+</div>

@@ -1,8 +1,8 @@
-// Place all the styles related to the Docs controller here.
+// Place all the styles related to the Notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.doc {
+.note {
     border: 5.0px solid #B1A296;
     border-radius: 2rem;
     margin-bottom: 1rem;
@@ -45,7 +45,7 @@
     background-color: $blue;
 }
 
-#doc_show {
+#note_show {
     .title {
         @include bold_font;
         color: #78594B;
