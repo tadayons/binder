@@ -1,0 +1,74 @@
+// Place all the styles related to the Notes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.note {
+    border: 5.0px solid #B1A296;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    background-color: #B1A296;
+    
+    .title{
+        @include bold_font;
+        color: white;
+        font-size: 2.0rem;
+        margin-bottom: 1.25rem;
+        text-align: center;
+    }
+    
+    .date {
+        @include bold_font;
+        color: rgb(179, 213, 235); 
+        font-size: 1.0rem;
+        margin-bottom: 1.25rem;
+        text-align: center;
+    }
+    
+    .content {
+        @include bold_font;
+        color: white;
+        font-size: 1.25rem;
+        margin-bottom: 1.25rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+.smallbtn {
+    text-align: center;
+    color: white;
+    font-size: 1.25rem;
+    width: 8rem;
+    height: 3rem;
+    padding: 0rem;
+    background-color: $blue;
+}
+
+#note_show {
+    .title {
+        @include bold_font;
+        color: #78594B;
+        font-size: 2.0rem;
+        margin-bottom: 1.25rem;
+        padding-bottom: 1rem;
+        border-bottom: 1.0px solid rgba(82, 158, 204, 0.2);
+        text-align: center;
+    }
+    p {
+        font-size: 1.0rem;
+        line-height: 1.75;
+    }
+    .buttons {
+        margin-top: 3rem;
+        text-align: center;
+        a.button {
+            padding: 0.2rem 1.5rem;
+            border-radius: 0.1rem;
+            text-decoration: none;
+            color: #529ECC;
+            border: 5px solid #529ECC;
+            @include bold_font;
+            background: transparent;
+        }
+    }
+}
