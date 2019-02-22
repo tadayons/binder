@@ -22,7 +22,7 @@ class NotesController < ApplicationController
         end
     end
     
-    def edit # the noteument is edited in the view file
+    def edit # the note is edited in the view file
     end
     
     def update
